@@ -1,13 +1,7 @@
 ﻿using Microsoft.Agents.AI.Workflows;
 using Microsoft.Agents.AI.Workflows.Reflection;
 using OpenAI.Chat;
-using System;
 using System.ClientModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Video_Blog_Writer;
 
 namespace Video_Blog_Writer
 {

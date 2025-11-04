@@ -1,5 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using AngleSharp.Dom;
 using Microsoft.Agents.AI.Workflows;
 using Video_Blog_Writer;
 
@@ -15,7 +14,6 @@ internal class BlogWriterWorkFlow
         Workflow = new WorkflowBuilder(videoDownLoaderExcutor) // Pass the required 'start' parameter
             .AddEdge(videoDownLoaderExcutor, videoTranscriberExecutor)
             .AddEdge(videoTranscriberExecutor, blogTitleExcutor)
-            .AddEdge(videoTranscriberExecutor, blogExcutor) // Fork to send transcriber output to the blog writer
             .AddEdge(blogTitleExcutor, blogExcutor)       // Join to wait for both inputs
             .WithOutputFrom(blogExcutor)
             .Build();

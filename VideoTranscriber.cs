@@ -40,6 +40,10 @@ namespace Video_Blog_Writer
                 // ✅ Clean up file after transcription
                 File.Delete(filePath);
                 Console.WriteLine($"🗑️ Deleted: {filePath}");
+
+                // TODO: this is to store the transcribed text to pass it to blogwriter
+                // consider better way to pass data between executors.
+                AgentState.TranscribedVideoText = resultText;
                 return resultText.Trim();
             }
             catch (Exception ex)
