@@ -1,0 +1,19 @@
+﻿# Visual Studio build files
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Whisper models and large files
+model/
+*.wav
+*.mp4
+
+# Logs and local data
+*.log
+.env
