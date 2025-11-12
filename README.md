@@ -26,7 +26,7 @@ Before you can run this project, you need to have the following installed and co
 
 1.  Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/ZeHailem/Blog-Writer-Agent.git
     ```
 2.  Navigate to the project directory:
     ```sh
